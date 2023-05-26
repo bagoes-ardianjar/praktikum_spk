@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="kb_mrp_pembahanan_tree_view_id" model="ir.ui.view">
+        <field name="name">kb_mrp_pembahanan_tree_view_id</field>
+        <field name="model">kb.mrp.pembahanan</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="tahun"/>
+                <field name="tanggal_masuk_oven"/>
+                <field name="tanggal_selesai_vakum"/>
+                <field name="tanggal_selesai_stick"/>
+                <field name="item"/>
+                <field name="code"/>
+                <field name="grade"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="kb_mrp_pembahanan_form_view_id" model="ir.ui.view">
+        <field name="name">kb_mrp_pembahanan_form_view_id</field>
+        <field name="model">kb.mrp.pembahanan</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="tahun"/>
+                        <field name="tanggal_masuk_oven"/>
+                        <field name="tanggal_selesai_vakum"/>
+                        <field name="tanggal_selesai_stick"/>
+                        <field name="item"/>
+                        <field name="code"/>
+                        <field name="tebal"/>
+                        <field name="pcs"/>
+                    </group>
+                    <group>
+                        <field name="m3"/>
+                        <field name="jenis_kayu"/>
+                        <field name="no_chamber"/>
+                        <field name="tanggal_keluar_oven"/>
+                        <field name="grade"/>
+                        <field name="fsc"/>
+                        <field name="vakum_celup"/>
+                        <field name="shift"/>
+                        <field name="keterangan"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

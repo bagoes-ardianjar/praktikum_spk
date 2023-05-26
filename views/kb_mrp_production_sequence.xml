@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sequence_kb_mrp_pembahanan_id" model="ir.sequence">
+         <field name="name">Sequence Kb Mrp Pembahanan</field>
+         <field name="code">kb.mrp.pembahanan</field>
+         <field name="prefix">MP/%(year)s/</field>
+         <field eval="1" name="number_next"/>
+        <field eval="1" name="number_increment"/>
+        <field eval="True" name="use_date_range"/>
+        <field name="company_id" eval="False"/>
+        <field name="padding">5</field>
+    </record>
+</odoo>
